@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: postgres
+  host: 127.0.0.1
+
+
+development:
+  <<: *default
+  database: user_devise_development
+
+test:
+  <<: *default
+  database: user_devise_development
+
+test:
+  <<: *default
+  database: user_devise_development
